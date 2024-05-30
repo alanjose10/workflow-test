@@ -22,7 +22,7 @@ jobs:
       steps:
         - name: Hello world action step
           id: hello
-          uses: alanjose10/hello-world-docker-action@v1
+          uses: alanjose10/hello-world-docker-action@v1.1
           with:
             who-to-greet: 'Mona the Octocat'
         
