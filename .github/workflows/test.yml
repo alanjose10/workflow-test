@@ -28,3 +28,13 @@ jobs:
         
         - name: Get the output time
           run: echo "The time was ${{ steps.hello.outputs.time }}"
+
+    test-writing-env-file:
+      runs-on: ubuntu-latest
+      name: A job to test writing to the env file
+      steps:
+        - name: Set the env variable
+          run: echo "MY_NAME=Alan" >> "$GITHUB_ENV"
+        
+        - name: Print the env variable
+          run: echo $MY_NAME
