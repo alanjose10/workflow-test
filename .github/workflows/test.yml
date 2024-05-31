@@ -37,4 +37,4 @@ jobs:
           run: echo "MY_NAME=Alan" >> "$GITHUB_ENV"
         
         - name: Print the env variable
-          run: echo "::debug::$MY_NAME"
+          run: echo "::warning::$MY_NAME"
